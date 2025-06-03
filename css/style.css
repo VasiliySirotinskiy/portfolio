@@ -1,0 +1,121 @@
+/* Сброс стилей для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Блочная модель */
+*::before,
+*::after, {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --green: #09A494;
+    --txt-color: #212121;
+}
+
+.container {
+    /* минимальная ширина контейнера */
+	min-width: 320px;
+	
+    /* максимальная ширина контейнера */
+    max-width: 1280px;
+	
+    /* горизонтальные внешние отступы, установленные в auto, выравнивают блок по центру */
+    margin: 0 auto;
+	
+    /* внутренние отступы по 20px не дадут контенту прилипнуть слева и справа на маленьких экранах */
+    padding: 0 20px;
+}
+
+/* Основной текст */
+body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+}
+
+/* Заголовок h1 */
+h1 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Подзаголовок */
+.subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Заголовок h2 */
+h2 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Заголовок h3 */
+h3 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Кнопки и ссылки */
+button, a {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+button {
+    padding: 10px 24px;
+    border: 2px solid var(--green);
+    border-radius: 8px;
+    color: var(--green);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    text-transform: lowercase;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: var(--bg-color);
+}
+
+/* Главное меню */
+.main-nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--txt-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: var(--green);
+}
+
+footer {
+    color: var(--bg-color);
+    background-color: var(--txt-color);
+}
+
