@@ -33,7 +33,7 @@
 
 /* Основной текст */
 body {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -43,34 +43,34 @@ body {
 
 /* Заголовок h1 */
 h1 {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 60px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.83;
 }
 
 /* Подзаголовок */
 .subtitle {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 3.16;
 }
 
 /* Заголовок h2 */
 h2 {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 4;
 }
 
 /* Заголовок h3 */
 h3 {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 5;
 }
 
 /* Кнопки и ссылки */
@@ -119,3 +119,145 @@ footer {
     background-color: var(--txt-color);
 }
 
+/* Скрытие текста для доступности */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.2s;
+}
+
+.social-link:hover {
+  background-color: var(--green);
+}
+
+.social-link_github {
+  background-image: url('../img/social/github.svg');
+}
+
+.social-link_telegram {
+  background-image: url('../img/social/telegram.svg');
+}
+
+/* Контакты */
+.contact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-link {
+  display: block;
+  padding: 10px 16px 10px 50px;
+  color: var(--txt-color);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  transition: color 0.2s;
+  border-radius: 8px;
+}
+
+.contact-link:hover {
+  color: var(--green);
+  background-color: transparent;
+}
+
+.contact-link_phone {
+  background-image: url('../img/icon/phone.svg');
+}
+
+.contact-link_mail {
+  background-image: url('../img/icon/email.svg');
+}
+
+.intro img {
+  border-radius: 50%;
+}
+
+/* Навыки */
+.skill-list {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.skill-list dt {
+  margin-bottom: 6px;
+  padding: 5px 0 5px 38px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.skill-level {
+  margin: 4px 0 20px;
+  padding: 2px;
+  font-size: 0;
+  border: 1px solid var(--green);
+  border-radius: 16px;
+}
+
+.skill-level div {
+  height: 14px;
+  background-color: var(--green);
+  border-radius: 8px;
+}
+
+.skill-item {
+  text-transform: lowercase;
+}
+
+.skill-item_html {
+  background-image: url('../img/skills/html.svg');
+}
+.skill-item_css {
+  background-image: url('../img/skills/css.svg');
+}
+.skill-item_cpp {
+  background-image: url('../img/skills/c++.svg');
+}
+.skill-item_python {
+  background-image: url('../img/skills/python.svg');
+}
+.skill-item_javascript {
+  background-image: url('../img/skills/javascript.svg');
+}
+.skill-item_typescript {
+  background-image: url('../img/skills/typescript.svg');
+}

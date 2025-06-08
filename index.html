@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Портфолио Сиротинского Василия — студента МГТУ им. Н. Э. Баумана">
   <title>Сиротинский Василий — Портфолио</title>
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
   <div class="container">
     <header class="main-header">
-      <a href="#about">
-        <img src="img/main-logo.svg" width="32" height="32" alt="Логотип">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#skills">Навыки</a></li>
-          <li><a href="#interests">Интересы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header-wrapper">
+        <a href="#about">
+          <img src="img/main-logo.svg" width="32" height="32" alt="Логотип" />
+        </a>
+        <nav class="main-nav">
+          <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#interests">Интересы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <!-- ОБО МНЕ -->
       <section id="about" class="intro">
-        <div class="about-wrapper">
+        <div style="display: flex; align-items: center; gap: 30px;">
           <div>
             <h1>Сиротинский Василий</h1>
             <p class="subtitle">Инженер-программист</p>
           </div>
-          <img src="img/user-photo.jpg" width="200" height="200" alt="Фотография Сиротинского Василия">
+          <img src="img/user-photo.jpg" width="200" height="200" alt="Фотография Сиротинского Василия" />
         </div>
-
         <h2>Пара слов обо мне</h2>
-        <p>Привет 👋</p>
         <p>
+          Привет 👋<br>
           В данный момент я учусь в магистратуре МГТУ им. Н. Э. Баумана
           по направлению «Информатика и вычислительная техника».
         </p>
@@ -54,35 +55,41 @@
         </p>
       </section>
 
+      <!-- НАВЫКИ -->
       <section id="skills" class="skills">
         <h2>Мои навыки</h2>
-
-        <p>Сортировать: <button>по названию</button> <button>по уровню</button></p>
-
-        <dl>
-          <dt>HTML</dt>
-          <dd><div style="width: 40%;">40%</div></dd>
-
-          <dt>CSS</dt>
-          <dd><div style="width: 40%;">40%</div></dd>
-
-          <dt>Python</dt>
-          <dd><div style="width: 70%;">70%</div></dd>
-
-          <dt>JavaScript</dt>
-          <dd><div style="width: 50%;">50%</div></dd>
-
-          <dt>TypeScript</dt>
-          <dd><div style="width: 70%;">70%</div></dd>
-
-          <dt>C++</dt>
-          <dd><div style="width: 80%;">80%</div></dd>
+        <p>Сортировать: <button>по названию</button><button>по уровню</button></p>
+        <dl class="skill-list">
+          <div>
+            <dt class="skill-item skill-item_html">HTML</dt>
+            <dd><div class="skill-level"><div style="width: 40%"></div></div></dd>
+          </div>
+          <div>
+            <dt class="skill-item skill-item_css">CSS</dt>
+            <dd><div class="skill-level"><div style="width: 40%"></div></div></dd>
+          </div>
+          <div>
+            <dt class="skill-item skill-item_python">Python</dt>
+            <dd><div class="skill-level"><div style="width: 65%"></div></div></dd>
+          </div>
+          <div>
+            <dt class="skill-item skill-item_javascript">JavaScript</dt>
+            <dd><div class="skill-level"><div style="width: 50%"></div></div></dd>
+          </div>
+          <div>
+            <dt class="skill-item skill-item_typescript">TypeScript</dt>
+            <dd><div class="skill-level"><div style="width: 70%"></div></div></dd>
+          </div>
+          <div>
+            <dt class="skill-item skill-item_cpp">C++</dt>
+            <dd><div class="skill-level"><div style="width: 80%"></div></div></dd>
+          </div>
         </dl>
       </section>
 
+      <!-- ИНТЕРЕСЫ -->
       <section id="interests" class="interests">
         <h2>Мои интересы</h2>
-
         <p>
           Меня особенно привлекает программирование ПЛК, автоматизация и создание красивых и удобных пользовательских интерфейсов для промышленного оборудования.
         </p>
@@ -91,20 +98,20 @@
         </p>
       </section>
 
+      <!-- КОНТАКТЫ -->
       <section id="contacts" class="contacts">
         <h2>Мои контакты</h2>
-
         <nav aria-label="Контактные данные">
-          <ul>
-            <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-            <li><a href="mailto:vsirotinskij@bk.ru">vsirotinskij@bk.ru</a></li>
+          <ul class="contact">
+            <li><a class="contact-link contact-link_phone" href="tel:+79991234567">+7 999 123-45-67</a></li>
+            <li><a class="contact-link contact-link_mail" href="mailto:vsirotinskij@bk.ru">vsirotinskij@bk.ru</a></li>
           </ul>
         </nav>
-
+        <!-- Навигация для внешних профилей -->
         <nav aria-label="Ссылки на соцсети">
-          <ul>
-            <li><a href="https://github.com/VasiliySirotinskiy" target="_blank">GitHub</a></li>
-            <li><a href="https://t.me/qwerty34vzgladi" target="_blank">Telegram</a></li>
+          <ul class="social">
+            <li><a class="social-link social-link_github" href="https://github.com/VasiliySirotinskiy " target="_blank"><span class="visually-hidden">GitHub</span></a></li>
+            <li><a class="social-link social-link_telegram" href="https://t.me/qwerty34vzgladi" target="_blank"><span class="visually-hidden">Telegram</span></a></li>
           </ul>
         </nav>
       </section>
@@ -116,6 +123,5 @@
       <p>© 2025 Сиротинский Василий</p>
     </div>
   </footer>
-
 </body>
 </html>
