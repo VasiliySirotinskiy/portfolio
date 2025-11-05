@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -19,7 +20,7 @@
 					<img src="img/main-logo.svg" width="60" height="60" alt="Логотип">
                 </a>
 
-                <button class="nav-btn nav-btn_close">
+                <button class="nav-btn nav-btn_close" type="button">
                     <span class="visually-hidden">Закрыть меню</span>
                 </button>
             </div>
@@ -66,10 +67,10 @@
             <section id="skills" class="skills">
                 <div class="skills-header">
                     <h2>Мои навыки</h2>
-                    <div class="skills-controls">
+                    <div class="skills-controls skills-sort">
                         Сортировать
-                        <button>по названию</button>
-                        <button>по уровню</button>
+                        <button type="button" data-sort-type="name">по названию</button>
+                        <button type="button" data-sort-type="level">по уровню</button>
                     </div>
                 </div>
 
@@ -111,6 +112,5 @@
 		<p>© 2025 Сиротинский Василий</p>
     </div>
 	</footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

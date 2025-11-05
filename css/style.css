@@ -360,7 +360,11 @@ section,
 		display: block;
 		width: 30px;
 		height: 30px;
-		border: 0; 
+		border: 0;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
 	}
     .nav-btn_close {
 		background-image: url('../img/menu-btn/close.svg');
@@ -371,6 +375,10 @@ section,
 
     .main-nav a {
 		padding: 20px 30px;
+	}
+	
+	.main-nav_closed {
+		display: none; 
 	}
 
     .main-header-wrap {
